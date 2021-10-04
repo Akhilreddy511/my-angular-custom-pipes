@@ -1,0 +1,9 @@
+<!-- {{ name | uppercase }} -->
+
+{{ 2 | inrToUsd: 70 }}
+
+<ol>
+  <li *ngFor="let money of currency">
+    {{ money.name }} {{ money.value | inrToUsd: money.converter }}
+  </li>
+</ol>
